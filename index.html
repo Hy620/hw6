@@ -436,6 +436,24 @@
 
     <script>
         $(function () {
+            
+            $('#collapse a,.navbar-brand').click(function () {
+
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var $target = $(this.hash);
+                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+                    console.log($target)
+                    if ($target.length) {
+                        var targetOffset = $target.offset().top - 90;
+                        $('html,body').animate({
+                            scrollTop: targetOffset
+                        },
+                            1000);
+                        return false;
+                    }
+                }
+            })
+            
             $('#Q1_answer').css('display', 'inline-block')
             $('#Q1,#Q2,#Q3,#Q4').click(function (e) {
                 $('#Q1_answer,#Q2_answer,#Q3_answer,#Q4_answer').css('display', 'none')
@@ -456,23 +474,6 @@
                 wow.init();
             }
         })
-
-          $(document).ready(function () {
-          $('.toTop').on('click', function (e) {
-            e.preventDefault();
-            $('html,body').animate({ // 有些瀏覽器只支援html，有些只支援body 所以兩個都寫進去
-              scrollTop: 0,
-            }, 700)
-          });
-          $('nav').on('click','a', function (e) {
-            e.preventDefault();
-            const anchor = $(this).attr('href');
-            const linkScroll = $(anchor).offset().top;
-            $('html,body').stop().animate({ 
-              scrollTop: linkScroll -43
-            },700)
-          });
-        });
 
     </script>
 </body>
