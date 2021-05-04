@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Anti-ED</title>
 </head>
-
-<body id="js-scroll">
+    
+<!-- overflow-x屬性指定在左邊緣和右邊緣溢出時是剪切內容，添加滾動條還是顯示塊級元素的溢出內容。-->
+<body style="overflow-x: hidden !important;" id="js-scroll">
 
     <nav class='m-nav navbar navbar-inverse navbar-fixed-top'>
         <div class='container' style="height: 40px;">
@@ -40,7 +41,7 @@
         </div>
 
     </nav>
-    <div class="main-container container pd-bt-40 clearfix" style="margin-top: 140px;" id="top">
+    <div class="main-container container pd-bt-40" style="margin-top: 140px;" id="top">
         <div class="col-md-5 wow bounceIn " data-wow-delay=".7s">
             <img style="position: relative;z-index: 10;" src="./images/main.jpg" class="img-responsive" alt="">
         </div>
@@ -51,18 +52,18 @@
             <img src="./images/ellipsePic.png" class="wow flipInY ellipsePic-image img-responsive" data-wow-delay=".8s"
                 alt="">
             <div class="main-fix-text wow flipInX" data-wow-delay="1s">
-                <p>無關胖瘦</p>
-                <p>身材自由</p>
+                <p class="title">無關胖瘦</p>
+                <p class="title">身材自由</p>
             </div>
         </div>
     </div>
 
-    <div class="container pd-bt-40  pd-bt-40" id="main" style="margin-top: 30px;">
+    <div class="container pd-bt-40" id="main" style="margin-top: 20px;">
         <div class="section section1">
-            <div class="col-md-3 col-lg-3 col-xs-5 col-ms-5 col-lg-3 col-xs-5 col-ms-5 section2-left title-bottom">
+            <div class="col-md-3 col-lg-3 col-xs-12 col-ms-12 section2-left title-bottom">
                 <div class="chao-title wow slideInUp" data-wow-delay="0.1s">What's Eating Disorder</div>
             </div>
-            <div class="col-md-9 col-lg-9  col-xs-7  col-sm-7   ">
+            <div class="col-md-9 col-lg-9  col-xs-12  col-sm-12">
                 <p class="mar-bt-20 chao-text mar-top-30 wow slideInUp" data-wow-delay="0.2s">Eating Disorders (ED) are serious but treatable mental and physical illnesses that can affect people of all ages, genders, races, religions, ethnicities, body shapes and weights, which are more common among women with the incidence ten times higher than men. In women’s lifetime, the chance of getting Anorexia is about 4%; getting Bulimia or Binge eating disorder is around 2%.
                 </p>
                 <p class="wow slideInUp" data-wow-delay="0.3s">While no one knows for sure what causes Eating Disorder, a growing consensus suggests that it is a range of genetics, brain biology, personality traits and sociocultural factors which encourages homogeneous and fixed judgement of aesthetical ideals in women’s body images.</p>
@@ -70,15 +71,15 @@
         </div>
     </div>
 
-    <div class="container pd-bt-40  pd-bt-40" id="Types" style="margin-top: 30px;">
+    <div class="container pd-bt-40  pd-bt-40" id="Types" style="margin-top: 20px;">
 
         <div class="section">
             <div class="row no-pa-mar">
-                <div class="col-md-3 col-lg-3 col-xs-5 col-ms-5 section2-left title-bottom">
+                <div class="col-md-3 col-lg-3 col-xs-12 col-ms-12 section2-left title-bottom">
                     <div class="chao-title wow slideInUp" data-wow-delay="0.3s">Types & Symptoms</div>
                 </div>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12" col-xs-12  col-sm-12 col-lg-12  >
                 <p class="mar-bt-20 chao-text wow slideInUp" data-wow-delay="0.4s">Besides the three most common types
                     of eating disorders mentioned above,
                     less-known or less common eating disorders also exist, like Purging Disorder, Night Eating Syndrome
@@ -127,19 +128,16 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
-    <div class="container pd-bt-40" id="Issues" style="margin-top: 30px;">
+    <div class="container pd-bt-40" id="Issues" style="margin-top: 20px;">
         <div class="section">
-            <div class="col-md-3 col-lg-3 col-xs-5 col-ms-5 section2-left title-bottom">
+            <div class="col-md-3 col-lg-3 col-xs-12 col-ms-12 section2-left title-bottom">
                 <div class="chao-title wow slideInU" data-wow-delay="0.1s">Body Image Issues</div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 col-lg-9  col-xs-12 col-ms-12">
                 <p class="mar-bt-20 chao-text mar-top-30 wow slideInU" data-wow-delay=".2s" style="margin-left: 12px;">Body image issues are common
-                    problems in a society promoting
-                    unrealistic body ideals, it’s hard to resist temptations of comparing oneself to ideal standards.
+                    problems in a society promoting unrealistic body ideals, it’s hard to resist temptations of comparing oneself to ideal standards.
                     Hence many individuals experience dejection, anxiety, self-loathing and even end up developing
                     Eating Disorders. Topics in Social Media, for instance, related to losing weight, can always
                     intensify the ubiquitous stress.</p>
@@ -226,7 +224,7 @@
     <div class="container pd-bt-40" id="Stories" style="margin-top: 30px;">
 
         <div class="section">
-            <div class="col-md-3 col-lg-3 col-xs-5 col-ms-5 section2-left title-bottom">
+            <div class="col-md-3 col-lg-3 col-xs-12 col-ms-12 section2-left title-bottom">
                 <div class="chao-title wow slideInUp" data-wow-delay=".1s">Stories from sufferers...</div>
             </div>
             <div>
@@ -242,8 +240,7 @@
                 </div>
             </div>
             <div>
-                <div
-                    class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2  col-ms-10 col-ms-offset-1 col-xs-10 col-xs-offset-1  suffer-item">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2  col-ms-10 col-ms-offset-1 col-xs-10 col-xs-offset-1  suffer-item">
                     <div class="number wow slideInUp" data-wow-delay=".1s">02</div>
                     <div class="name wow slideInUp" data-wow-delay=".2s">@bluelu</div>
                     <div class="text wow slideInUp" data-wow-delay=".3s">我已經想不起來是什麼時候，吃飯這件事對我來說成為了一種障礙，<br>
@@ -267,8 +264,7 @@
                 </div>
             </div>
             <div>
-                <div
-                    class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2  col-ms-10 col-ms-offset-1 col-xs-10 col-xs-offset-1  suffer-item">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2  col-ms-10 col-ms-offset-1 col-xs-10 col-xs-offset-1  suffer-item">
                     <div class="number wow slideInUp" data-wow-delay=".1s">04</div>
                     <div class="name wow slideInUp" data-wow-delay=".21s">@Valdis</div>
                     <div class="text wow slideInUp" data-wow-delay=".3s">胖了以后，全家都敦促我减肥。我感觉到身体的不情愿，但我对它说你必须跟我一致。<br>
@@ -291,9 +287,9 @@
         </div>
     </div>
 
-    <div class="container pd-bt-40" id="FAQ" style="margin-top: 30px;">
+    <div class="container pd-bt-40" id="FAQ" style="margin-top: 20px;">
         <div class="section">
-            <div class="col-md-3 col-lg-3 col-xs-5 col-ms-5 col-lg-3 col-xs-5 col-ms-5 col- section2-left title-bottom">
+            <div class="col-md-3 col-lg-3 col-xs-12 col-ms-12 col-lg-3 col- section2-left title-bottom">
                 <div class="chao-title wow slideInUp" data-wow-delay="0.1s">FAQ</div>
             </div>
             <div class="col-xs-12">
@@ -326,10 +322,10 @@
                         </div>
                         <li class=" wow slideInUp" id="Q4" data-wow-delay="0.4s">Q4. What can I do to help?</li>
                         <div class="answer wow slideInUp" data-wow-delay="0.1s" id="Q4_answer">
-                            A: If you are now suffering ED or used to having ED, let’s hear about your stories, how you
+                            <p>A: If you are now suffering ED or used to having ED, let’s hear about your stories, how you
                             get it and what do you do to deal with it. Though it’s hard to recover from ED, it’s still
                             treatable and there remains hope. Your stories may encourage other people with ED and at
-                            least let them know they are not alone. You’re not alone, too.
+                            least let them know they are not alone. You’re not alone, too.</p>
                             <p>If you are healthy people, congratulations first, yet maybe you can still put up with
                                 some ideas on how to dismiss unhealthy aesthetical traditions in our society. Just feel
                                 free to contact us. We firmly believe that an accumulative impact of seas of small
@@ -342,9 +338,9 @@
     </div>
 
 
-    <div class="container pd-bt-40" id="Contact" style="margin-top: 30px;" >
+    <div class="container pd-bt-40" id="Contact" style="margin-top: 20px;" >
         <div class="section">
-            <div class="col-md-3 col-lg-3 col-xs-5 col-ms-5 col-lg-3 col-xs-5 col-ms-5 col- section2-left title-bottom">
+            <div class="col-md-3 col-lg-3 col-xs-12 col-ms-12 col-lg-3 col- section2-left title-bottom">
                 <div class="chao-title wow slideInUp" data-wow-delay=".1s">Contact</div>
             </div>
             <div class="col-xs-12 no-pa-mar">
@@ -377,23 +373,23 @@
         </div>
     </div>
 
-    <div class="container pd-bt-40">
+    <div class="container">
         <div class="section share-box">
             <form class="form-horizontal">
                 <div class="form-group">
-                    <div class="no-pa-mar col-md-6 col-lg-6 col-sx-10 col-sm-10">
+                    <div class="wow slideInUp no-pa-mar col-md-6 col-lg-6 col-sx-10 col-sm-10" data-wow-delay=".1s">
                         <input type="text" class="form-control" id="inputEmail3" placeholder="Name">
                     </div>
                 </div>
                 <div class="form-group" style="margin-top: 10px;">
-                    <div class="no-pa-mar col-md-6 col-lg-6 col-sx-10  col-sm-10">
+                    <div class="wow slideInUp no-pa-mar col-md-6 col-lg-6 col-sx-10  col-sm-10" data-wow-delay=".2s">
                         <input type="email" class="form-control" id="inputPassword3" placeholder="Email ">
                     </div>
                 </div>    
                 <div class="form-group" style="margin-top: 10px;">
                     <div class="no-pa-mar col-md-6 col-lg-6 col-sx-10  col-sm-10">
                         <textarea class="wow slideInUp form-control" data-wow-delay=".3s"
-                            rows="6">Feel free to share your stories. You’re never alone to face eating disorders !</textarea>
+                            rows="6">Feel free to write down your stories. You’re never alone to face eating disorders !</textarea>
                     </div>
                 </div>
                 <div class="form-group wow slideInUp" data-wow-delay=".4s" style="margin-top: 20px;">
@@ -412,14 +408,14 @@
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <p class="wow slideInUp " data-wow-delay="0.1s"><a  href="mailto:hongyang.c@nycu.edu.tw">antied@gmail.com</a></p>
                 <p class=" wow slideInUp " data-wow-delay="0.2s">0979-063-620</p>
-                <p class="f-s wow slideInUp " data-wow-delay="0.3s"><a  href="https://www.google.com/maps/place/300新竹市東區大學路1001號/data=!4m2!3m1!1s0x34683611dcf63a29:0x7cd7b92e8a3c5019?sa=X&ved=2ahUKEwjKiMyhka_wAhWSNKYKHc3ID8MQ8gEwAHoECAYQAQ">新竹市東區大學路1001號</a></p>
+                <p class="f-s-f wow slideInUp " data-wow-delay="0.3s"><a  href="https://www.google.com/maps/place/300新竹市東區大學路1001號/data=!4m2!3m1!1s0x34683611dcf63a29:0x7cd7b92e8a3c5019?sa=X&ved=2ahUKEwjKiMyhka_wAhWSNKYKHc3ID8MQ8gEwAHoECAYQAQ">新竹市東區大學路1001號</a></p>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-4">
-                <p class="f-s wow slideInUp " data-wow-delay="0.1s">
+                <p class="f-s-f wow slideInUp " data-wow-delay="0.1s">
                     
                     <a href="https://www.nationaleatingdisorders.org">美國進食障礙幫助協會 NEDA</a>
                     </p>
-                <p class="f-s wow slideInUp " data-wow-delay="0.2s">
+                <p class="f-s-f wow slideInUp " data-wow-delay="0.2s">
                     <a href="https://oa.org/">進食障礙者匿名互助組織 OA</a>
                 </p>
             </div>
@@ -444,7 +440,7 @@
                     $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
                     console.log($target)
                     if ($target.length) {
-                        var targetOffset = $target.offset().top - 90;
+                        var targetOffset = $target.offset().top - 80;
                         $('html,body').animate({
                             scrollTop: targetOffset
                         },
