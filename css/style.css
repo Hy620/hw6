@@ -1,15 +1,20 @@
 body {
     background-color: #cfc5c4;
-    background-image: url('../images/bg.png');
     padding-top: 50px;
+}
+.collapse{
+    background-color: #cfc5c4;
 }
 .clearfix::after {
     content: "  ";
     display: block;
+/*    表示不允許元素在兩側浮動。*/
     clear: both;
 }
 * {
     box-sizing: border-box;
+    font-family: "Helvetica Neue";
+    font-size: 15px;
 }
 @font-face {
     font-family: "fangSong";
@@ -23,14 +28,16 @@ body {
     background-color: #cfc5c4;
     border: 0;
     color: #1f1f1f;
-    font-family: Minion;
+    font-family: "Helvetica Neue";
     font-size: 18px;
 }
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav  li  a {
     color: #1f1f1f;
 }
 .section1{
-
+    /* background-image: url('../images/ellipse_group.png');
+    background-repeat: no-repeat;
+    background-size: 500px 400px; */
     overflow: hidden;
 }
 .m-logo {
@@ -41,13 +48,19 @@ body {
     margin-top: 25%;
     position: relative;
     left: -20%;
+    overflow: hidden;
 }
 .main-fix-text{
+    font-family: mingChao;
     font-size: 50px;
     position: absolute;
     left: 15%;
-    font-family: fangSong;
     bottom: 10%;
+}
+
+.title{
+    font-family: mingChao;
+    font-size: 50px;
 }
 .ellipsePic-image{
     position: absolute;
@@ -75,7 +88,7 @@ body {
     margin-top: 30px;
 }
 .chao-title {
-    font-size: 26px;
+    font-size: 28px;
     font-family: fangSong;
     padding-bottom: 5px;
 }
@@ -87,8 +100,10 @@ body {
     padding: 0;
     margin: 0;
 }
+
+/*首字母放大*/
 .chao-text:first-letter {
-    font-size: 30px;
+    font-size: 33px;
 }
 
 .section2-left {
@@ -122,7 +137,7 @@ body {
 }
 .suffer-item .text {
     margin: 30px 0;
-    font-size: 15px;
+    font-size: 18px;
     font-family: fangSong;
     line-height: 30px;
 }
@@ -147,14 +162,14 @@ body {
 }
 .faq-box .answer a {
     color: #6a5b60;
-    font-size: 14px;
+    font-size: 16px;
 }
 .mar-top-40 {
     margin-top: 40px;
 }
 
 .share-box {
-/*     border-top: 1px solid #9c8990; */
+    border-top: 1px solid #9c8990;
     padding-bottom: 100px;
     padding-top: 30px;
 }
@@ -185,7 +200,13 @@ body {
 }
 .f-s{
     font-family: fangSong;
+    font-size: 18px;
 }
+.f-s-f{
+    font-family: fangSong;
+    font-size: 15px;
+}
+
 .pd-bt-40{
     padding-bottom: 40px;
 }
