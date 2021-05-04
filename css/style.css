@@ -1,5 +1,5 @@
 body {
-    background-color: #cfc5c4;
+    background: linear-gradient(#cfc5c4,25%, #bab5bb ,60%, #cfc5c4);
     padding-top: 50px;
 }
 .collapse{
